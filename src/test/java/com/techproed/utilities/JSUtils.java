@@ -39,7 +39,7 @@ public class JSUtils {
     //Flashing teh background color
     public static void flash(WebElement element) {
         String bgColor = element.getCssValue("backgroundcolor");
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 3; i++) {
             changeColor("rgb(0,200,0", element);
             changeColor(bgColor, element);
         }
